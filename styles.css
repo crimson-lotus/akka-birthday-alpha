@@ -2,6 +2,7 @@
 
 body {
     position: relative;
+    font-family: 'Indie Flower', cursive;
 }
 
 /* Intial background div styling */
@@ -21,7 +22,7 @@ body {
 
 .initial-para {
     font-family: 'Indie Flower', cursive;
-    font-size: 3.6rem;
+    font-size: 3.9rem;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -48,6 +49,20 @@ body {
     position: absolute;
     width: 75%;
     bottom: 0;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+}
+
+#content-div {
+    background-color: #EFFFFD;
+    margin-top: 2rem;
+    height: 69%;
+    width: 61%;
+    z-index: 3;
+    border-radius: 10% 10% 37% 37%;
+    box-shadow: 6px 9px 1px #FDEBF7;
+}
+
+.first-para {
+    font-size:3.9rem;
 }
