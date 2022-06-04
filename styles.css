@@ -1,0 +1,53 @@
+/* Body styles */
+
+body {
+    position: relative;
+}
+
+/* Intial background div styling */
+#initial-div {
+    background-color: #161616;
+    padding:6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.my-btn {
+    padding: 3.5rem 3rem 2.5rem 3rem;
+}
+
+.initial-para {
+    font-family: 'Indie Flower', cursive;
+    font-size: 3.6rem;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* Styling for the next background div that has the content */
+
+#background-div {
+    z-index: 3;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+}
+
+.img-primary {
+    position: absolute;
+    height:100vh;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+.img-secondary {
+    position: absolute;
+    width: 75%;
+    bottom: 0;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
