@@ -9,10 +9,14 @@ $('.seventh').hide()
 $('.eigth').hide()
 $('.ninth').hide()
 var child = 2;
+var myAudio = document.getElementById("myAudio");
+// myAudio.autoplay
 
 $('.switch').click(function() {
     $('#initial-div').hide()
     $('#background-div').fadeIn(300)
+    myAudio.play()
+    myAudio.loop = true
     // $('.ninth').show()
     $('.first').fadeIn(1000)
     setInterval(function() { 
