@@ -8,7 +8,7 @@ body {
 /* Intial background div styling */
 #initial-div {
     background-color: #161616;
-    padding:6rem;
+    padding:5rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,12 +22,35 @@ body {
 
 .initial-para {
     font-family: 'Indie Flower', cursive;
-    font-size: 3.9rem;
+    font-size: 4.5rem;
+}
+
+/* Animations */
+
+@keyframes bounce { 
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-60px); }
+    50% { transform: translateY(0); }
+    25% { transform: translateY(-30px); }
+}
+
+@keyframes bounce1 { 
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-100px); }
+    50% { transform: translateY(0); }
+    25% { transform: translateY(-20px); }
+}
+
+@keyframes balloon {
+    0% {transform: translateY(0); opacity: 0}
+    5% {opacity: 1;}
+    100% {transform: translateY(-480px); opacity: 0.1;}
 }
 
 /* ------------------------------------------------------------------------------------------------- */
 
 /* Styling for the next background div that has the content */
+
 
 #background-div {
     z-index: 3;
@@ -55,14 +78,288 @@ body {
 
 #content-div {
     background-color: #EFFFFD;
-    margin-top: 2rem;
-    height: 69%;
+    margin-top: 0.7rem;
+    height: 72%;
     width: 61%;
     z-index: 3;
-    border-radius: 10% 10% 37% 37%;
+    border-radius: 10% 10% 35% 35%;
     box-shadow: 6px 9px 1px #FDEBF7;
 }
 
-.first-para {
-    font-size:3.9rem;
+/* Part A */
+
+.part-a {
+    margin-top: 2rem;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 4.8rem;
+}
+
+.part-a p {
+    animation: bounce 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+/* Part B */
+
+.part-b {
+    margin-top: 2rem;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 7.8rem;
+}
+
+.part-b span:first-child {
+    animation: bounce1 1.2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.part-b span:last-child {
+    animation: bounce1 1.2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 0.3s;
+}
+
+/* Part C */
+
+center {
+    margin: 0;
+    padding: 0;
+}
+
+.part-c {
+    /* margin-top: 1rem; */
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 4.5rem;
+    padding: 0 20px;
+    animation: bounce 1.8s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.one {
+    font-size: 5.1rem;
+    color: #D83A56;
+    font-weight: 750;
+}
+
+.two {
+    font-size: 5.1rem;
+    color: #8E05C2;
+    font-weight: 750;
+}
+
+.three {
+    font-size: 5.1rem;
+    color: #F2789F;
+    font-weight: 750;
+}
+
+.four {
+    font-size: 5.1rem;
+    color: #FF5C58;
+    font-weight: 750;
+}
+
+.five {
+    font-size: 5.1rem;
+    color: #3D2C8D;
+    font-weight: 750;
+}
+
+.six {
+    font-size: 5.1rem;
+    color: #CD113B;
+    font-weight: 750;
+}
+
+/* Part D */
+
+.part-d {
+    position: relative;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.1rem;
+    animation: bounce 2.1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.photo {
+    width: 34.5%;
+    height: 69%;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    border-radius:15%;
+    box-shadow: 6px 9px 3px #F9CEEE;
+}
+
+.party-hat {
+    position: absolute;
+    height: 22%;
+    width: 14%;
+    top: -27px;
+    left: 42%;
+    transform: rotate(340deg)
+}
+
+.flag-a, .flag-b {
+    position: absolute;
+    height: 38%;
+    width: 20%;
+}
+
+.flag-a {
+    top: 0;
+    left: 0;
+}
+
+.flag-b {
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.pop-a, .pop-b {
+    position: absolute;
+    height: 16%;
+    width: 9%;
+}
+
+.pop-a {
+    top: 40%;
+    left: 18%;
+}
+
+.pop-b {
+    top: 48%;
+    right: 15%;
+    transform: scaleX(-1);
+}
+
+.fire-a {
+    position: absolute;
+    height: 21%;
+    width: 11%;
+    top: 51%;
+    left: 33.5%;
+    transform: rotate(30deg)
+}
+
+.leaf {
+    position: absolute;
+    height: 12%;
+    width: 7%;
+    top: 4%;
+    right: 34%;
+}
+
+.ribbon-a {
+    position: absolute;
+    height: 16%;
+    width: 8%;
+    left: 5%;
+    bottom: 27%;
+}
+
+.ribbon-b {
+    position: absolute;
+    height: 10%;
+    width: 5%;
+    bottom: 30%;
+    right: 35%;
+    transform: rotate(350deg)
+}
+
+.balloon1 {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    height: 15%;
+    width: 8%;
+    animation: balloon 5s ease 2s infinite;
+    left: 0;
+    bottom: 0;
+}
+
+.balloon2 {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    height: 15%;
+    width: 8%;
+    animation: balloon 5s ease 3.5s infinite;
+    left: 24%;
+    bottom: 0;
+}
+
+.balloon3 {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    height: 15%;
+    width: 8%;
+    animation: balloon 5s ease 4s infinite;
+    right: 24%;
+    bottom: 0;
+}
+
+.balloon4 {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    height: 15%;
+    width: 8%;
+    animation: balloon 5s ease 2.5s infinite;
+    right: 0;
+    bottom: 0;
+}
+
+.balloon5 {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    height: 15%;
+    width: 8%;
+    animation: balloon 5s ease 5s infinite;
+    right: 12%;
+    bottom: 0;
+}
+
+.balloon6 {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    height: 15%;
+    width: 8%;
+    animation: balloon 5s ease 4.5s infinite;
+    left: 12%;
+    bottom: 0;
+}
+
+.replay-btn {
+    position: absolute;
+    bottom: -20px;
+    color: #37E2D5;
 }
